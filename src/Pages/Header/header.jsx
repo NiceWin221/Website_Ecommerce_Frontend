@@ -1,4 +1,5 @@
 import { useRef, useState } from "react"
+import Logo from "./images/geoff-max-logo.png"
 import "./header.css"
 
 export default function Header() {
@@ -95,7 +96,7 @@ export default function Header() {
         {navbarToggle ? (<i className="fa-solid fa-bars" onClick={handleClick}></i>) : (<i className="fa-solid fa-x" onClick={handleBack}></i>)}
       </span>
       <span><i className="fa-solid fa-magnifying-glass"></i></span>
-      <h1 className="text-xl font-bold px-12">Warung WiYan</h1>
+      <img src={Logo} alt="logo" className="w-[100px] lg:w-[135px]"/>
       <span><i className="fa-solid fa-right-to-bracket"></i></span>
       <span><i className="fa-solid fa-cart-shopping"></i></span>
       <nav className="navbar w-full py-4 px-6 pb-20 absolute bg-white top-full left-0" style={navbar}>
