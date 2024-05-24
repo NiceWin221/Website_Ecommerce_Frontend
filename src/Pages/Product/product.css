@@ -1,0 +1,43 @@
+.product{
+  opacity: 0;
+  z-index: -10;
+}
+.product.active{
+  opacity: 1;
+  z-index: 10;
+  transition: opacity 0.3s ease-in-out;
+}
+.product-shoes img{
+  transform: scale(0.9);
+}
+.product-sandal img{
+  transform: scale(0.7);
+}
+.underlines::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: black;
+  width: 0;
+  left: 50%;
+  bottom: -3px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+.underlines{
+  color: #8f99a6;
+  transition: color 0.2s ease-in-out;
+}
+.underlines:hover{
+  color: black;
+}
+.underlines.animate{
+  color: black;
+}
+.underlines.animate::after{
+  width: 100%;
+}
+.shoes-bar{
+  transition: left 0.5s ease-in-out;
+  left: 0;
+}

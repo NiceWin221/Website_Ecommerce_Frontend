@@ -1,0 +1,63 @@
+nav {
+  z-index: 0;
+  left: -100%;
+  opacity: 0;
+}
+.navbar {
+  position: relative;
+}
+.navbar-toggle i{
+  width: 15px;
+  height: 15px;
+}
+.navbar-toggle:hover{
+  scale: 1.3;
+  transition: scale 0.3s ease-in-out;
+}
+.item1 {
+  position: relative;
+  left: -10%;
+  opacity: 0;
+  transition: left 0.5s ease-in-out, opacity 0.4s ease;
+}
+.item2 {
+  position: relative;
+  left: -10%;
+  opacity: 0;
+  transition: left 0.5s ease-in-out, opacity 0.4s ease;
+}
+.item3 {
+  position: relative;
+  left: -10%;
+  opacity: 0;
+  transition: left 0.5s ease-in-out, opacity 0.4s ease;
+}
+.item4 {
+  position: relative;
+  left: -10%;
+  opacity: 0;
+  transition: left 0.5s ease-in-out, opacity 0.4s ease;
+}
+.item5 {
+  position: relative;
+  left: -10%;
+  opacity: 0;
+  transition: left 0.5s ease-in-out, opacity 0.4s ease;
+}
+.item6 {
+  position: relative;
+  left: -10%;
+  opacity: 0;
+  transition: left 0.5s ease-in-out, opacity 0.4s ease;
+}
+.item7 {
+  position: relative;
+  left: -10%;
+  opacity: 0;
+  transition: left 0.5s ease-in-out, opacity 0.4s ease;
+}
+.navbar ul li span{
+  padding-right: 10px;
+}
+
+

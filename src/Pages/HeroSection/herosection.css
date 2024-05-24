@@ -1,0 +1,61 @@
+.hero {
+  width: 100%;
+  height: 450px;
+}
+.button {
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  width: 131px;
+}
+.btn {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+.background {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.2s ease-in-out;
+}
+.button:hover .background {
+  width: 0;
+}
+.button:hover .btn {
+  color: white;
+}
+.bg-right,
+.bg-left {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  background: white;
+  transition: width 0.2s ease-in-out;
+}
+.bg-right{
+  right: 0;
+}
+.bg-left{
+  left: 0;
+}
+.button:hover .bg-left,
+.button:hover .bg-right {
+  width: 50%;
+}
+.firstLoad{
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
+}
+.hero-text{
+  bottom: -40px;
+  opacity: 0;
+  transition: bottom 0.7s ease-out, opacity 0.8s ease-out;
+}
