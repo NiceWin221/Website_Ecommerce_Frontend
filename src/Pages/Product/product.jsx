@@ -88,7 +88,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 250.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 300.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[23%] lg:h-[23%]'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Shoes5} alt="shoes" className='w-full h-full mb-4 relative bottom-3 group-hover:opacity-0' draggable="false" />
                 <img src={Shoes5s} alt="shoes" className='w-full h-full mb-4 bottom-3 absolute left-0 -top-3 hidden group-hover:block' draggable="false" />
@@ -99,7 +99,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 230.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 330.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[23%] lg:h-[23%]'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Shoes5} alt="shoes" className='w-full h-full mb-4 relative bottom-3 group-hover:opacity-0' draggable="false" />
                 <img src={Shoes5s} alt="shoes" className='w-full h-full mb-4 bottom-3 absolute left-0 -top-3 hidden group-hover:block' draggable="false" />
@@ -110,7 +110,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 230.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 330.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[23%] lg:h-[23%]'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Shoes5} alt="shoes" className='w-full h-full mb-4 relative bottom-3 group-hover:opacity-0' draggable="false" />
                 <img src={Shoes5s} alt="shoes" className='w-full h-full mb-4 bottom-3 absolute left-0 -top-3 hidden group-hover:block' draggable="false" />
@@ -121,7 +121,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 230.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 330.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[23%] lg:h-[23%]'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Shoes5} alt="shoes" className='w-full h-full mb-4 relative bottom-3 group-hover:opacity-0' draggable="false" />
                 <img src={Shoes5s} alt="shoes" className='w-full h-full mb-4 bottom-3 absolute left-0 -top-3 hidden group-hover:block' draggable="false" />
@@ -132,7 +132,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 230.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 330.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[23%] lg:h-[23%]'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Shoes5} alt="shoes" className='w-full h-full mb-4 relative bottom-3 group-hover:opacity-0' draggable="false" />
                 <img src={Shoes5s} alt="shoes" className='w-full h-full mb-4 bottom-3 absolute left-0 -top-3 hidden group-hover:block' draggable="false" />
@@ -144,7 +144,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 330.000,00</p>
             </span>
           </div>
-          <div className='border border-slate-300 pt-1 mx-8 rounded-full bg-slate-300 relative bottom-14'><span className='shoes-bar absolute bg-black top-0 w-[12.5%] h-full rounded-full' ref={shoesBar}></span>
+          <div className='border border-slate-300 pt-1 mx-8 rounded-full bg-slate-300 relative bottom-14 lg:hidden'><span className='shoes-bar absolute bg-black top-0 w-[12.5%] h-full rounded-full' ref={shoesBar}></span>
           </div>
         </div>
         <div className={`product product-hoodie w-full cursor-pointer overflow-hidden absolute left-0 top-0 ${activeProduct === 'hoodie' ? 'active' : ''}`}
@@ -153,7 +153,7 @@ export default function Product() {
           onMouseUp={hoodiesMouseUp}
           onMouseLeave={hoodieMouseLeave}>
           <div className='w-full flex gap-1' ref={hoodiesRef}>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Hoodie1} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Hoodie1s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -164,7 +164,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 195.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 340.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Hoodie2} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Hoodie2s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -175,7 +175,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 195.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 340.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Hoodie3} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Hoodie3s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -186,7 +186,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 175.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 250.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Hoodie4} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Hoodie4s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -197,7 +197,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 175.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 250.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Hoodie4} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Hoodie4s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -208,7 +208,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 175.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 250.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Hoodie4} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Hoodie4s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -219,7 +219,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 175.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 250.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Hoodie4} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Hoodie4s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -230,7 +230,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 175.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 250.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Hoodie4} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Hoodie4s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -241,7 +241,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 175.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 250.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Hoodie4} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Hoodie4s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -253,7 +253,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 250.000,00</p>
             </span>
           </div>
-          <div className='border border-slate-300 pt-1 mx-8 rounded-full bg-slate-300 relative bottom-14'><span className='shoes-bar absolute bg-black top-0 w-[12.5%] h-full rounded-full' ref={hoodiesBar}></span>
+          <div className='border border-slate-300 pt-1 mx-8 rounded-full bg-slate-300 relative bottom-14 lg:hidden'><span className='shoes-bar absolute bg-black top-0 w-[12.5%] h-full rounded-full' ref={hoodiesBar}></span>
           </div>
         </div>
         <div className={`product product-sandal w-full cursor-pointer overflow-hidden absolute left-0 top-0 ${activeProduct === 'sandal' ? 'active' : ''}`}
@@ -262,7 +262,7 @@ export default function Product() {
           onMouseUp={sandalsMouseUp}
           onMouseLeave={sandalsMouseLeave}>
           <div className='w-full flex gap-1' ref={sandalsRef}>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Sandal1} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Sandal1s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -273,7 +273,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 85.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 100.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Sandal2} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Sandal2s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -284,7 +284,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 140.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 200.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Sandal2} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Sandal2s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -295,7 +295,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 140.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 200.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Sandal2} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Sandal2s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -306,7 +306,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 140.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 200.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Sandal2} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Sandal2s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -317,7 +317,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 140.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 200.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Sandal2} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Sandal2s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -328,7 +328,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 140.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 200.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Sandal2} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Sandal2s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -339,7 +339,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 140.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 200.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Sandal2} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Sandal2s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -350,7 +350,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline'>Rp 140.000,00</p>
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 200.000,00</p>
             </span>
-            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group'>
+            <span className='relative mt-5 mb-20 w-[50%] h-[50%] flex-shrink-0 group lg:w-[25%] lg:h-[25%]'>
               <div className="img-container relative group">
                 <img src={Sandal2} alt="shoes" className='w-full h-full mb-4 group-hover:opacity-0' draggable="false" />
                 <img src={Sandal2s} alt="Hoodie" className='w-full h-full mb-4 absolute left-0 top-0 hidden group-hover:block' draggable="false" />
@@ -362,7 +362,7 @@ export default function Product() {
               <p className='text-base px-2 text-slate-500 leading-relaxed inline line-through'>Rp 200.000,00</p>
             </span>
           </div>
-          <div className='border border-slate-300 pt-1 mx-8 rounded-full bg-slate-300 relative bottom-14'><span className='shoes-bar absolute bg-black top-0 w-[12.5%] h-full rounded-full' ref={sandalsBar}></span>
+          <div className='border border-slate-300 pt-1 mx-8 rounded-full bg-slate-300 relative bottom-14 lg:hidden'><span className='shoes-bar absolute bg-black top-0 w-[12.5%] h-full rounded-full' ref={sandalsBar}></span>
           </div>
         </div>
       </div>

@@ -37,8 +37,6 @@ export default function Collection() {
   const shoesZoom = useRef(null)
   const [quantity, setQuantity] = useState(1)
   const [activeQuantity, setActiveQuantity] = useState(null)
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
 
   const handleQuantityPlus = () => {
     setQuantity(prevQuantity => prevQuantity + 1);
@@ -78,28 +76,15 @@ export default function Collection() {
       }, 300)
     }
 
-    if (isMobile) {
-      if (inViewShoesWidth < viewport - 450) {
-        shoesZoom.current.style.transition = "transform 7s ease-in-out"
-        shoesWidth.current.style.width = "500px"
-        shoesZoom.current.style.transform = "scale(1.1)"
-      } else {
-        shoesWidth.current.style.width = "450px"
-        shoesZoom.current.style.transform = "scale(1)"
-        shoesZoom.current.style.transition = "transform 2s ease-in-out"
-      }
+    if (inViewShoesWidth < viewport - 450) {
+      shoesWidth.current.style.width = "100%"
+      shoesZoom.current.style.transform = "scale(1.1)"
+      shoesZoom.current.style.transition = "transform 7s ease-in-out"
     } else {
-      if (inViewShoesWidth < viewport - 450) {
-        shoesWidth.current.style.width = "100%"
-        shoesZoom.current.style.transition = "transform 7s ease-in-out"
-        shoesZoom.current.style.transform = "scale(1.1)"
-      } else {
-        shoesWidth.current.style.width = "90%"
-        shoesZoom.current.style.transform = "scale(1)"
-        shoesZoom.current.style.transition = "transform 2s ease-in-out"
-      }
+      shoesWidth.current.style.width = "90%"
+      shoesZoom.current.style.transform = "scale(1)"
+      shoesZoom.current.style.transition = "transform 2s ease-in-out"
     }
-
 
     if (inViewFollow < viewport - 200) {
       inFollowUs.style.transform = "scale(1)";
@@ -312,88 +297,88 @@ export default function Collection() {
       </div>
       {/*  */}
       <div className='w-full flex justify-center mt-20 lg:w-full'>
-        <div className='w-[450px] overflow-hidden relative h-[500px] flex flex-col justify-end lg:h-[100vh] lg:w-[90%] transition-all duration-500 ease-in-out' ref={shoesWidth}>
-          <img src={PotoLG} alt="Shoes" className='hidden lg:block object-cover w-full h-full absolute' ref={shoesZoom} />
-          <img src={Poto1} alt="Shoes" className='w-full h-full object-cover absolute lg:hidden' ref={shoesZoom} />
-          <span className='flex items-center gap-2 text-white font-semibold justify-center text-lg relative z-10 mb-8'>
+        <div className='w-[90%px] overflow-hidden relative h-[500px] flex flex-col justify-end lg:h-[100vh] transition-all duration-500 ease-in-out' ref={shoesWidth}>
+          <img src={Poto1} alt="Shoes" className='w-full h-full object-cover absolute' ref={shoesZoom} />
+          <span className='flex items-center gap-2 text-white font-semibold justify-center text-lg relative z-10 mb-8 lg:mb-[100px] lg:text-lg lg:text-black'>
             <a href="https://www.instagram.com/wybnsa/" target="_blank">
-              <i className="fa-brands fa-instagram text-slate-500 cursor-pointer hover:text-slate-200 transition duration-300 ease-out"></i>
+              <i className="fa-brands fa-instagram text-slate-500 cursor-pointer hover:text-slate-200 transition duration-300 ease-out lg:text-black"></i>
             </a>
-            <h1>FOLLOW US</h1>
+            <h1 className='lg:text-xl'>FOLLOW US</h1>
           </span>
+          <div className='w-full text-center border border-slate-200 bg-gray-200 mb-20 justify-center px-4 py-4 lg:block lg:absolute lg:w-fit lg:left-[450px] lg:bottom-[70px] hidden'>
+            <h1 className='text-4xl font-bold text-black w-[70%] mb-3 lg:w-full lg:text-5xl'>BRING YOUR PAGE TO LIFE</h1>
+            <button className='relative group border border-black'>
+              <h1 className='text-base text-white font-bold px-8 py-3 relative z-10 group-hover:text-black transition-all duration-500 ease-in-out'>SHOP NOW</h1>
+              <span className='life absolute left-[50%] translate-x-[-50%] bg-black top-0 h-full group-hover:w-0'></span>
+            </button>
+          </div>
         </div>
       </div>
-      {/*  */}
-      <div className='w-full text-center border border-slate-200 bg-gray-200 mb-20 flex flex-wrap justify-center px-4 py-4'>
-        <h1 className='text-4xl font-bold text-black w-[70%] mb-3'>BRING YOUR PAGE TO LIFE</h1>
+      <div className='w-full text-center border border-slate-200 bg-gray-200 mb-20 justify-center px-4 py-4 flex flex-wrap lg:hidden'>
+        <h1 className='text-4xl font-bold text-black w-[70%] mb-3 lg:w-full lg:text-5xl'>BRING YOUR PAGE TO LIFE</h1>
         <button className='relative group border border-black'>
           <h1 className='text-base text-white font-bold px-8 py-3 relative z-10 group-hover:text-black transition-all duration-500 ease-in-out'>SHOP NOW</h1>
           <span className='life absolute left-[50%] translate-x-[-50%] bg-black top-0 h-full group-hover:w-0'></span>
         </button>
       </div>
       {/*  */}
-      <div className='w-full text-center relative mb-20 bg-slate-200'>
-      <div className='w-full text-center relative mb-20'>
-      <h1 className='text-xl font-semibold text-black'>GAVIN STANCE WHITE GUM</h1>
-      <h2 className='text-3xl font-bold text-black'>GAVIN STANCE WHITE GUM</h2>
-      <h1 className='absolute left-0 top-20 px-3 py-1 text-black text-sm font-semibold bg-slate-200 cursor-pointer'>SOLD OUT</h1>
-      <img src={Shoes1} alt="Shoes" />
-      <h1 className='text-3xl font-bold text-black leading-relaxed text-left px-4'>GAVIN STANCE WHITE GUM</h1>
-      <div className='flex gap-2 px-4'>
-          <p className='text-lg text-black font-bold'>RP 399.00,00</p>
-          <p className='text-lg text-slate-500 line-through'>Rp 600.000,00</p>
-        </div >
-        <h3 className='text-sm text-black text-left font-bold px-4 mt-2 mb-2'>SIZE</h3>
-        <div className='flex gap-2 px-4 mt-1 items-center'>
-          <div className='relative' onClick={() => { setActiveQuantity(38) }}>
-            <span className={`size ${activeQuantity === 38 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>38</span>
-          </div>
-          <div className='relative' onClick={() => { setActiveQuantity(39) }}>
-            <span className={`size ${activeQuantity === 39 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>39</span>
-          </div>
-          <div className='relative' onClick={() => { setActiveQuantity(40) }}>
-            <span className={`size ${activeQuantity === 40 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>40</span>
-          </div>
-          <div className='relative' onClick={() => { setActiveQuantity(41) }}>
-            <span className={`size ${activeQuantity === 41 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>41</span>
-          </div>
-          <div className='relative' onClick={() => { setActiveQuantity(42) }}>
-            <span className={`size ${activeQuantity === 42 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>42</span>
-          </div>
-          <div className='relative' onClick={() => { setActiveQuantity(43) }}>
-            <span className={`size ${activeQuantity === 43 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>43</span>
-          </div>
-          <div className='relative' onClick={() => { setActiveQuantity(44) }}>
-            <span className={`size ${activeQuantity === 44 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer`}>44</span>
+      <div className='w-full text-center relative mb-20 bg-[#e0e0e0] lg:mt-16 lg:pt-8'>
+        <div className='w-full text-center relative'>
+          <h1 className='text-xl font-semibold text-black lg:text-3xl'>GAVIN STANCE WHITE GUM</h1>
+          <h2 className='text-3xl font-bold text-black lg:text-6xl'>GAVIN STANCE WHITE GUM</h2>
+          <h1 className='absolute left-0 top-20 px-3 py-1 text-black text-sm font-semibold bg-slate-200 cursor-pointer lg:hidden'>SOLD OUT</h1>
+          <div className='lg:flex lg:justify-center lg:w-full'>
+            <div className='relative lg:mt-10'>
+              <img src={Shoes1} alt="Shoes" />
+              <h1 className='hidden lg:block absolute left-0 top-0 bg-gray-200 text-base font-bold'>SOLD OUT</h1>
+            </div>
+            <div className='lg:mt-10'>
+              <h1 className='text-3xl font-bold text-black leading-relaxed text-left px-4'>GAVIN STANCE WHITE GUM</h1>
+              <div className='flex gap-2 px-4'>
+                <p className='text-lg text-black font-bold'>RP 399.00,00</p>
+                <p className='text-lg text-slate-500 line-through'>Rp 600.000,00</p>
+              </div >
+              <h3 className='text-sm text-black text-left font-bold px-4 mt-2 mb-2'>SIZE</h3>
+              <div className='flex gap-2 px-4 mt-1 items-center'>
+                <div className='relative' onClick={() => { setActiveQuantity(38) }}>
+                  <span className={`size ${activeQuantity === 38 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>38</span>
+                </div>
+                <div className='relative' onClick={() => { setActiveQuantity(39) }}>
+                  <span className={`size ${activeQuantity === 39 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>39</span>
+                </div>
+                <div className='relative' onClick={() => { setActiveQuantity(40) }}>
+                  <span className={`size ${activeQuantity === 40 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>40</span>
+                </div>
+                <div className='relative' onClick={() => { setActiveQuantity(41) }}>
+                  <span className={`size ${activeQuantity === 41 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>41</span>
+                </div>
+                <div className='relative' onClick={() => { setActiveQuantity(42) }}>
+                  <span className={`size ${activeQuantity === 42 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>42</span>
+                </div>
+                <div className='relative' onClick={() => { setActiveQuantity(43) }}>
+                  <span className={`size ${activeQuantity === 43 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer select-none`}>43</span>
+                </div>
+                <div className='relative' onClick={() => { setActiveQuantity(44) }}>
+                  <span className={`size ${activeQuantity === 44 ? "active" : ""} px-4 py-[10px] border border-slate-400 text-sm font-semibold cursor-pointer`}>44</span>
+                </div>
+              </div>
+              <h1 className='text-left px-4 mt-4 font-bold'>QUANTITY</h1>
+              <div className='flex border border-black w-fit items-center mx-4 mt-2'>
+                <i className="fa-solid fa-minus text-xl font-semibold p-2 px-4 cursor-pointer" onClick={handleQuantityMinus}></i>
+                <span className='text-lg font-semibold text-center w-[80px] select-none'>{quantity}</span>
+                <i className="fa-solid fa-plus text-xl font-semibold p-2 px-4 cursor-pointer" onClick={handleQuantityPlus}></i>
+              </div>
+              <div className='flex flex-wrap justify-center'>
+                <button className='w-[93%] py-3 font-semibold text-sm border border-black mt-4 px-4'>SOLD OUT</button>
+                <div className='w-[93%] py-3 border border-black mt-2 relative group flex justify-center'>
+                  <button className='font-semibold text-sm text-white relative z-10 group-hover:text-slate-500 transition-all duration-500 ease-in-out'>BUY IT NOW</button>
+                  <span className='w-full h-full absolute bg-slate-500 left-[50%] top-0 translate-x-[-50%] group-hover:w-0 transition-all duration-300 ease-in-out'></span>
+                </div>
+              </div>
+              <p className='text-left text-sm px-4 font-bold mt-1 underline cursor-pointer hover:no-underline'>VIEW PRODUCT DETAILS</p>
+            </div>
           </div>
         </div>
-        <h1 className='text-left px-4 mt-4 font-bold'>QUANTITY</h1>
-        <div className='flex border border-black w-fit items-center mx-4 mt-2'>
-          <i className="fa-solid fa-minus text-xl font-semibold p-2 px-4 cursor-pointer" onClick={handleQuantityMinus}></i>
-          <span className='text-lg font-semibold text-center w-[80px] select-none'>{quantity}</span>
-          <i className="fa-solid fa-plus text-xl font-semibold p-2 px-4 cursor-pointer" onClick={handleQuantityPlus}></i>
-        </div>
-        <button className='w-[464px] py-3 font-semibold text-sm border border-black mt-4'>SOLD OUT</button>
-        <div className='w-[464px] py-3 border border-black mt-2 relative ml-4 group'>
-          <button className='font-semibold text-sm text-white relative z-10 group-hover:text-slate-500 transition-all duration-500 ease-in-out'>BUY IT NOW</button>
-          <span className='w-full h-full absolute bg-slate-500 left-[50%] top-0 translate-x-[-50%] group-hover:w-0 transition-all duration-300 ease-in-out'></span>
-        </div>
-        <p className='text-left text-sm px-4 font-bold mt-1 underline cursor-pointer hover:no-underline'>VIEW PRODUCT DETAILS</p>
-          <p className='text-lg text-black'>RP 399.00,00</p>
-          <p className='text-lg text-slate-500 line-through'>Rp 600.000,00</p>
-        </div>
-        <h3 className='text-sm text-black text-left font-bold px-4 mt-2'>SIZE</h3>
-        <div className='flex gap-2 px-4 mt-1'>
-          <span className='px-4 py-2 border border-slate-400 text-sm font-semibold'>38</span>
-          <span className='px-4 py-2 border border-slate-400 text-sm font-semibold'>39</span>
-          <span className='px-4 py-2 border border-slate-400 text-sm font-semibold'>40</span>
-          <span className='px-4 py-2 border border-slate-400 text-sm font-semibold'>41</span>
-          <span className='px-4 py-2 border border-slate-400 text-sm font-semibold'>42</span>
-          <span className='px-4 py-2 border border-slate-400 text-sm font-semibold'>43</span>
-          <span className='px-4 py-2 border border-slate-400 text-sm font-semibold'>44</span>
-        </div>
-        <h1>QUANTITY</h1>
-        <button></button>
       </div >
     </div >
   )
