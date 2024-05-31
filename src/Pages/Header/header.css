@@ -30,6 +30,104 @@
 .item7 {
   transition: left 0.5s ease-in-out, opacity 0.4s ease;
 }
-.reverse{
+.reverse {
   transform: translateX(-1);
+}
+.hovered1::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: black;
+  width: 0;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+.hovered1:hover::after {
+  width: 100%;
+}
+.hovered2::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: black;
+  width: 0;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+.hovered2:hover::after {
+  width: 100%;
+}
+.hovered3::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: black;
+  width: 0;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+.hovered3:hover::after {
+  width: 100%;
+}
+.hovered4::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: black;
+  width: 0;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+.hovered4:hover::after {
+  width: 100%;
+}
+.hovered5::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: black;
+  width: 0;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+.hovered5:hover::after {
+  width: 100%;
+}
+.hovered6::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: black;
+  width: 0;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+.hovered6:hover::after {
+  width: 100%;
+}
+.hovered7::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: black;
+  width: 0;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+.hovered7:hover::after {
+  width: 100%;
 }
