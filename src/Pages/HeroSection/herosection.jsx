@@ -42,7 +42,7 @@ export default function Herosection() {
   }, []);
 
   return (
-    <div className="hero relative overflow-hidden w-full h-[500px] bg-gray-500">
+    <div className="hero relative overflow-hidden w-full h-[500px] bg-gray-500 z-10">
       {windowWidth >= 1024 ? (
         <img
           src={ImageLG}

@@ -40,11 +40,11 @@
   background-color: black;
   width: 0;
   left: 50%;
-  bottom: -10px;
+  bottom: 0;
   transform: translateX(-50%);
-  transition: width 0.3s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
-.hovered1:hover::after {
+.hovered1.expand1::after {
   width: 100%;
 }
 .hovered2::after {
