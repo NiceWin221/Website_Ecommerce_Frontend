@@ -40,22 +40,22 @@
   background: white;
   transition: width 0.2s ease-in-out;
 }
-.bg-right{
+.bg-right {
   right: 0;
 }
-.bg-left{
+.bg-left {
   left: 0;
 }
 .button:hover .bg-left,
 .button:hover .bg-right {
   width: 50%;
 }
-.firstLoad{
+.firstLoad {
   transform: scale(1.2);
   transition: transform 0.4s ease-in-out;
 }
-.hero-text{
-  bottom: -40px;
+.hero-text {
+  bottom: -20px;
   opacity: 0;
-  transition: bottom 0.7s ease-out, opacity 0.8s ease-out;
+  transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), bottom 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }

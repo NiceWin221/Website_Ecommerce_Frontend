@@ -15,7 +15,10 @@ export default function Header() {
   const [timeouts, setTimeouts] = useState([]);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  const { delay1: delay1s, delay2: delay2s, delay3: delay3s, delay4: delay4s, ref: ref1, hovered: hovered1, handleMouseEnter: handleMouseEnter1, handleMouseLeave: handleMouseLeave1 } = Hovered();
+  const { delay1: delay1s, delay2: delay2s, delay3: delay3s, delay4: delay4s, ref: ref1, hovered: hovered1, handleMouseEnter: handleMouseEnter1, handleMouseLeave: handleMouseLeave1,
+    ref2: ref2, hovered2: hovered2, delayed1: delayed1, delayed2: dileyed2, handleMouseEnter2: handleMouseEnter2, handleMouseLeave2: handleMouseLeave2,
+    ref3: ref3, hovered3: hovered3, deley1: deley1, deley2: deley2, deley3: deley3, handleMouseEnter3: handleMouseEnter3, handleMouseLeave3: handleMouseLeave3
+  } = Hovered();
 
   useEffect(() => {
     const handleResize = () => {
@@ -141,6 +144,23 @@ export default function Header() {
         <span><i className="fa-solid fa-cart-shopping lg:hidden"></i></span>
       </div>
       <div className={`w-full bg-white py-8 px-10 text-xl font-bold hidden lg:flex absolute top-[60px] left-0 gap-24 z-10 opacity-0}`}
+        onMouseEnter={handleMouseEnter3}
+        onMouseLeave={handleMouseLeave3}
+        ref={ref3}
+      >
+        <h1 className={`relative top-[50px] opacity-0`} ref={deley1}>T-SHIRT 24s</h1>
+        <h1 className={`relative top-[50px] opacity-0`} ref={deley2}>T-SHIRT HEAVYWEIGHT 16S(POWER16)</h1>
+        <h1 className={`relative top-[50px] opacity-0`} ref={deley3}>SHOES CUPSOLE</h1>
+      </div>
+      <div className={`w-full bg-white py-8 px-10 text-xl font-bold hidden lg:flex absolute top-[60px] left-0 gap-24 z-10 opacity-0}`}
+        onMouseEnter={handleMouseEnter2}
+        onMouseLeave={handleMouseLeave2}
+        ref={ref2}
+      >
+        <h1 className={`relative top-[50px] opacity-0`} ref={delayed1}>SHOES VULCANIZED</h1>
+        <h1 className={`relative top-[50px] opacity-0`} ref={dileyed2}>SHOES CUPSOLE</h1>
+      </div>
+      <div className={`w-full bg-white py-8 px-10 text-xl font-bold hidden lg:flex absolute top-[60px] left-0 gap-24 z-10 opacity-0}`}
         onMouseEnter={handleMouseEnter1}
         onMouseLeave={handleMouseLeave1}
         ref={ref1}
@@ -168,25 +188,31 @@ export default function Header() {
               <i className="fa-solid fa-angle-right lg:hidden"></i>
             </span>
           </li>
-          <li className="mt-6 item2 relative left-[-10%] opacity-0 lg:opacity-100 lg:left-0 lg:mt-0 lg:py-4" style={delay2}>
+          <li className={`mt-6 item2 relative left-[-10%] opacity-0 lg:opacity-100 lg:left-0 lg:mt-0 lg:py-4 hovered2 ${hovered2 ? "expand2" : ""}`} style={delay2}
+            onMouseEnter={handleMouseEnter2}
+            onMouseLeave={handleMouseLeave2}
+          >
             <span className="flex justify-between items-center lg:justify-normal pr-[10px] gap-1 lg:hidden">
               <i className="fa-solid fa-chevron-down hidden lg:block"></i>
               <a href="#">SHOES</a>
               <i className="fa-solid fa-angle-right lg:hidden"></i>
             </span>
-            <span className="hidden lg:flex items-center justify-normal pr-[10px] gap-1 hovered2">
+            <span className="hidden lg:flex items-center justify-normal pr-[10px] gap-1">
               <i className="fa-solid fa-chevron-down hidden lg:block"></i>
               <a href="#">SHOES</a>
               <i className="fa-solid fa-angle-right lg:hidden"></i>
             </span>
           </li>
-          <li className="mt-6 item3 relative left-[-10%] opacity-0 lg:opacity-100 lg:left-0 lg:mt-0 lg:py-4" style={delay3}>
+          <li className={`mt-6 item3 relative left-[-10%] opacity-0 lg:opacity-100 lg:left-0 lg:mt-0 lg:py-4 hovered3 ${hovered3 ? "expand3" : ""}`} style={delay3}
+            onMouseEnter={handleMouseEnter3}
+            onMouseLeave={handleMouseLeave3}
+          >
             <span className="flex justify-between items-center lg:justify-normal pr-[10px] gap-1 lg:hidden">
               <i className="fa-solid fa-chevron-down hidden lg:block"></i>
               <a href="#">T-SHIRT</a>
               <i className="fa-solid fa-angle-right lg:hidden"></i>
             </span>
-            <span className="hidden lg:flex justify-between items-center lg:justify-normal pr-[10px] gap-1 hovered3">
+            <span className="hidden lg:flex justify-between items-center lg:justify-normal pr-[10px] gap-1">
               <i className="fa-solid fa-chevron-down hidden lg:block"></i>
               <a href="#">T-SHIRT</a>
               <i className="fa-solid fa-angle-right lg:hidden"></i>
